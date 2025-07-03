@@ -1,42 +1,148 @@
-#root {
-  max-width: 1280px;
+body {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    font-family: 'CoveredByYourGrace', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background: linear-gradient(20deg , #8500be, #007413b0);
+    color: #ffffff;
+} 
+
+header {
+  height: 40vh;
+  min-height: 200px;
+  max-height: 350px;
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #ffffff;
+  padding: 20px 5vw;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+main {
+  display: grid;
+  padding: 20px;
+  margin: 1%;
+  left: 0;
+  border-radius: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  flex: 1 1 0;
+  font-size: clamp(2.5rem, 13vw, 12rem);
+  color: #005e1c;
+  margin-left: -5vw;
+  font-family: 'norwester', sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+@media (max-width: 700px) {
+  body, html {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  } 
+  header {
+    flex-direction: column;
+    height: 25vh;
+    margin-top: 25vw;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    overflow: visible;
   }
-  to {
-    transform: rotate(360deg);
+  .logo-3d {
+    margin-top: 20vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-3d img {
+    width: 100vw !important;
+    max-width: 100vw;
+    margin: 0 auto;
+    margin-left: 0 !important;
+    object-fit: contain;
+    
+  }
+  h1 {
+    width: 100%!important;
+    height: 50vw!important;
+    justify-content: center;
+    margin: 0;
+    padding: 0 2vw;
+    white-space: normal;
+    font-size: clamp(3.2rem, 25vh, 4rem)!important;
+    margin-left: 0!important;
+    background-color: #ffffff;
+  }
+  .logo-3d img:hover {
+    transform: none !important;
+  }
+  main {
+  background-color: #ff5151;
+  margin-top: 50vw;
+  padding: 20px;
+  border-radius: 15px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+
+
+
+
+
+@font-face {
+  font-family: 'Honk';
+  src: url('./assets/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 1000;
+  font-style: normal;
 }
 
-.card {
-  padding: 2em;
+@font-face {
+  font-family: 'CoveredByYourGrace';
+  src: url('./assets/CoveredByYourGrace-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.read-the-docs {
-  color: #888;
+@font-face {
+  font-family: 'BAR_SADY';
+  src: url('./assets/BAR_SADY_Variable.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'norwester';
+  src: url('./assets/norwester.otf') format('opentype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rothenbg';
+  src: url('./assets/rothenbg.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
 }

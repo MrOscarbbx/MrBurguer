@@ -1,0 +1,17 @@
+.scroll-3d-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+  overflow: visible;
+}
+
+.scroll-3d-image {
+  width: 60vw;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+  border-radius: 18px;
+}

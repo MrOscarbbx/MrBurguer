@@ -1,0 +1,86 @@
+.text-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1%;
+  border-radius: 15px;
+}
+
+.text-image-section.reverse {
+  text-align: justify;
+  direction: rtl;
+}
+
+.text-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+  font-family: 'BAR_SADY';
+}
+
+.text-content h2 {
+  font-size: 7.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.image-content {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .text-image-section {
+    display: block;
+    top: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .text-image-section.reverse {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }
+
+  .text-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
+
+
+@font-face {
+  font-family: 'BAR_SADY';
+  src: url('../assets/BAR_SADY_Variable.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
